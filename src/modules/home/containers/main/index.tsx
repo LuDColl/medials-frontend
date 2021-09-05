@@ -1,13 +1,19 @@
-import { Grid, ButtonGroup } from "@material-ui/core";
+import { ButtonGroup } from "@material-ui/core";
+import { FC, FormEvent } from "react";
 import Search from "../../components/search";
-import Submit from "../../components/submit";
 
-export default function Main() {
+const Main: FC = () => {
+  function HandleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  }
+
   return (
-    <form>
+    <form onSubmit={(e) => HandleSubmit(e)}>
       <ButtonGroup color="primary" aria-label="outlined primary button group">
         <Search />
       </ButtonGroup>
     </form>
   );
-}
+};
+
+export default Main;
