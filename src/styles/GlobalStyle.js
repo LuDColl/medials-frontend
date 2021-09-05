@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+import { createGlobalStyle } from "styled-components";
 
+const GlobalStyle = createGlobalStyle`
 html,
 body {
   padding: 0;
@@ -16,3 +17,6 @@ a {
 * {
   box-sizing: border-box;
 }
+`;
+
+export default GlobalStyle;

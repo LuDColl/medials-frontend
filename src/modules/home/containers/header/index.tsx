@@ -1,5 +1,5 @@
-export default function Header(){
-  return (
-    <h1>Header</h1>
-  )
+import { Grid } from "@material-ui/core";
+
+export default function Header() {
+  return <Grid />;
 }
