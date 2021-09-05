@@ -1,8 +1,9 @@
 import { Button } from "@material-ui/core";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
+import { FC } from "react";
 import Input from "./styles";
 
-export default function SearchMedia() {
+const SearchMedia: FC = () => {
   return (
     <>
       <Input id="contained-button-file" type="file" />
@@ -13,4 +14,6 @@ export default function SearchMedia() {
       </label>
     </>
   );
-}
+};
+
+export default SearchMedia;

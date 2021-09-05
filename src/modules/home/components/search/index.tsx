@@ -1,8 +1,9 @@
 import { InputAdornment, TextField } from "@material-ui/core";
+import { FC } from "react";
 import SearchMedia from "../searchMedia";
 import Submit from "../submit";
 
-export default function Search() {
+const Search: FC = () => {
   return (
     <TextField
       id="search"
@@ -17,4 +18,6 @@ export default function Search() {
       }}
     />
   );
-}
+};
+
+export default Search;

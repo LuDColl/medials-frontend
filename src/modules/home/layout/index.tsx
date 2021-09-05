@@ -3,8 +3,9 @@ import Header from "../containers/header";
 import Main from "../containers/main";
 import { Grid } from "@material-ui/core";
 import StyledGrid from "./styles";
+import { FC } from "react";
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <StyledGrid
       container
@@ -25,4 +26,6 @@ export default function Home() {
       </Grid>
     </StyledGrid>
   );
-}
+};
+
+export default Home;

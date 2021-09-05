@@ -1,5 +1,8 @@
 import { Grid } from "@material-ui/core";
+import { FC } from "react";
 
-export default function Header() {
+const Header: FC = () => {
   return <Grid />;
-}
+};
+
+export default Header;
